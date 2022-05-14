@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="menu.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="stylesheet" type="text/css" href="menu.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      </head>
+<body>
+    <!-- debut barre + animation -->
+    <nav class="navbar mode" role="navigation">
+        <div class="navbar__logo"></div> 
+        <div class = "linkss">   
+        <ul class="navbar__links">
+          <li class="navbar__link first"><a href="menu.html">ACCEUIL</a></li>
+          <li class="navbar__link second"><a href="#">CONTACT</a></li>
+          <li class="navbar__link third"><a href="Backtests.html">Backtests</a></li>
+          <li class="navbar__link four"><a href="#">F&Q</a></li>
+        </ul>
+        </div>   
+        <button class="burger">
+          <span class="bar"></span>  
+        </button>   
+      </nav>
+      <main class="main-content" role="main">
+      </main>
+      <script>
+      function toggleMenu () {  
+        const navbar = document.querySelector('.navbar');
+        const burger = document.querySelector('.burger');
+        burger.addEventListener('click', (e) => {    
+          navbar.classList.toggle('show-nav');
+        });    
+      }
+      toggleMenu();
+    </script>
+    <!-- fin barre + animation -->
+      <section class="hero">
+        <img src="1.png" class="translateX" data-speed="0.25" id="moon" alt="">
+        <img src="2.png" class="translateY" data-speed="0.25" id="clouds" alt="">
+        <img src="3.png" class="translateY" data-speed="0.9" id="mount" alt="">
+        <h1 id="text" class="translateX" data-speed="-4.0">BOT MAK2</h1>
+        <a href="#" id="btn">Backtests</a>
+        <img src="4.png" class="translateY" data-speed="0" id="base" alt="">
+      </section>
+      <!--insertion du button1-->
+      <div style="text-align: center;"id="button_1"class="container_styler btn_hausse">
+        <button id ="btn_styler" class="btn_styler btn_hausse" href="#">
+        Afficher Backtests à la <br>Huasse
+        </button>
+      </div>
+      <div id="section1" style="display:none;">
+      <section id="about" style="padding-top: 20px;
+      padding-bottom:0" class="section-padding">
+        <div class="container grid">
+          <div  class="dems" style ="margin-top:-70px;">
+            <!--analyse a la hausse-->
+            <div id="graphes_hausse" style="background-color: #d5ead7;">
+              <h4 style="margin-top:15px">
+                Graphique<br>
+                BNB Du 1 janvier 2018 au 11 mai 2022.<br> 
+              </h4>
+              <div> 
+                <img src="graph_bnb_hausse_1ansPNG.PNG"
+                style="max-width:650px">
+              </div> 
+              <br>
+              <!--insertion analyse graphique (g.h3)-->
+              <h4>
+                Bot Mak2 vs Holding.
+              </h4>
+              <h3 style="margin-bottom:-20px">
+                (à la hausse)
+              </h3>
+              <br>
+              <div class="graph">
+                <canvas id="myChart_h4"></canvas>
+              </div>
+              <h3>
+              <b>Bot Mak2 de 1000$ à 979349$.</b><br>
+              <b>Holding de 1000$ à 32130$.</b><br>
+              </h3>
+              <br>
+              <br>
+            </div>
+            <!--analyse a la hausse-->
+            <div id="graphes_hausse" style="background-color: #d5ead7;">
+              <h4 style="margin-top:15px">
+                Graphique<br>
+                Doge Du 1 janvier 2021 au 27 décembre 2021.<br> 
+              </h4>
+              <div> 
+                <img src="graph_doge_hausse_1ans.PNG"
+                style="max-width:650px">
+              </div> 
+              <br>
+              <!--insertion analyse graphique (g.2)-->
+              <h4>
+                Bot Mak2 vs Holding.
+              </h4>
+              <h3 style="margin-bottom:-20px">
+                (à la hausse)
+              </h3>
+              <br>
+              <div class="graph">
+                <canvas id="myChart_h"></canvas>
+              </div>
+              <h3>
+              <b>Bot Mak2 de 1000$ à 434328$.</b><br>
+              <b>Holding de 1000$ à 33415$.</b><br>
+              </h3>
+              <br>
+              <br>
+            </div>
+            <!--analyse a la hausse-->
+            <div id="graphes_hausse" style="background-color: #d5ead7;">
+              <h4 style="margin-top:15px">
+                Graphique<br>
+                XRP Du 4 mars 2021 au 11 mai 2022.<br> 
+              </h4>
+              <div> 
+                <img src="grraph_xrp_hausse_1ans.PNG"
+                style="max-width:650px">
+              </div> 
+              <br>
+              <!--insertion analyse graphique (g.2)-->
+              <h4>
+                Bot Mak2 vs Holding.
+              </h4>
+              <h3 style="margin-bottom:-20px">
+                (à la hausse)
+              </h3>
+              <br>
+              <div class="graph">
+                <canvas id="myChart_h2"></canvas>
+              </div>
+              <h3>
+              <b>Bot Mak2 de 1000$ à 2166$.</b><br>
+              <b>Holding de 1000$ à 657$.</b><br>
+              </h3>
+              <br>
+              <br>
+            </div>
+            <!--analyse a la hausse-->
+            <div id="graphes_hausse" style="background-color: #d5ead7;">
+              <h4 style="margin-top:15px">
+                Graphique<br>
+                DOT Du 1 janvier 2021 au 11 mai 2022.<br> 
+              </h4>
+              <div> 
+                <img src="graph_dot_hausse_1ans.PNG"
+                style="max-width:650px">
+              </div> 
+              <br>
+              <!--insertion analyse graphique (g.h3)-->
+              <h4>
+                Bot Mak2 vs Holding.
+              </h4>
+              <h3 style="margin-bottom:-20px">
+                (à la hausse)
+              </h3>
+              <br>
+              <div class="graph">
+                <canvas id="myChart_h3"></canvas>
+              </div>
+              <h3>
+              <b>Bot Mak2 de 1000$ à 2577$.</b><br>
+              <b>Holding de 1000$ à 1098$.</b><br>
+              </h3>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+      <!--insertion du button2-->
+      <div style="text-align: center;"id="button_1"class="container_styler">
+        <button id ="btn_styler2" class="btn_styler btn_range" href="#">
+        Afficher Backtests en <br>range
+        </button>
+      </div>
+    <div id="section2" style="display:none;">
+      <section id="about" style="padding-top: 20px;
+      padding-bottom: 0;" class="section-padding">
+        <div class="container grid">
+          <div  class="dems" style ="margin-top:-70px;">
+
+            <!--analyse en range-->
+            <div id="graphes_range" style="background-color: rgb(255, 253, 203);">
+              <h4 style="margin-top:15px">
+                Graphique.<br> 
+                VET Du 2 juillet 2020 au 23 decembre 2020.<br> 
+              </h4>
+              <div> 
+                <img src="graph_vet_range.PNG"
+                style="max-width:650px">
+              </div>
+              <br>
+              <!--insertion analyse graphique (r.2)-->
+              <h4>
+                Bot Mak2 vs Holding.
+              </h4>
+              <h3 style="margin-bottom:-20px">
+              (en range)
+              </h3>
+              <br>
+              <div class="graph">
+                <canvas id="myChart_r2"></canvas>
+                <br>
+              </div>
+              <h3>
+              <b>Bot Mak2 de 1000$ à 1387$.</b><br>
+              <b>Holding de 1000$ à 1385$.</b><br>
+              </h3>
+              <br>
+            </div>
+
+            <!--analyse en range-->
+            <div id="graphes_range" style="background-color: rgb(255, 253, 203);">
+              <h4 style="margin-top:15px">
+                Graphique.<br> 
+                XRP Du 4 novembre 2019 au 1 novembre 2020.<br> 
+              </h4>
+              <div> 
+                <img src="graph_xrp_range_1ans.PNG"
+                style="max-width:650px">
+              </div>
+              <br>
+              <!--insertion analyse graphique (g.2)-->
+              <h4>
+                Bot Mak2 vs Holding.
+              </h4>
+              <h3 style="margin-bottom:-20px">
+              (en range)
+              </h3>
+              <br>
+              <div class="graph">
+                <canvas id="myChart_r"></canvas>
+                <br>
+              </div>
+              <h3>
+              <b>Bot Mak2 de 1000$ à 1144$.</b><br>
+              <b>Holding de 1000$ à 802$.</b><br>
+              </h3>
+              <br>
+            </div>
+
+            <!--analyse en range-->
+            <div id="graphes_range" style="background-color: rgb(255, 253, 203);">
+              <h4 style="margin-top:15px">
+                Graphique.<br> 
+                AVAX Du 4 novembre 2019 au 1 novembre 2020.<br> 
+              </h4>
+              <div> 
+                <img src="graph_avax_rangePNG.PNG"
+                style="max-width:650px">
+              </div>
+              <br>
+              <!--insertion analyse graphique (g.2)-->
+              <h4>
+                Bot Mak2 vs Holding.
+              </h4>
+              <h3 style="margin-bottom:-20px">
+              (en range)
+              </h3>
+              <br>
+              <div class="graph">
+                <canvas id="myChart_r3"></canvas>
+                <br>
+              </div>
+              <h3>
+              <b>Bot Mak2 de 1000$ à 1326$.</b><br>
+              <b>Holding de 1000$ à 1058$.</b><br>
+              </h3>
+              <br>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+      <!--insertion du button2-->
+      <div style="text-align: center;"id="button_1"class="container_styler">
+        <button id ="btn_styler3" class="btn_styler btn_baisse" href="#">
+        Afficher Backtests à la <br>baisse
+        </button>
+      </div>
+    <div id="section3" style="display:none;">
+      <section id="about" style="padding-top: 20px;
+      padding-bottom: 0;" class="section-padding">
+        <div class="container grid">
+          <div  class="dems" style ="margin-top:-70px;">
+            <!--analyse a la baisse-->
+            <div id="graphes_baisses" style="background-color: rgb(255, 221, 221);">
+              <h4 style="margin-top:15px">
+                Graphique.<br> 
+                Luna Du 4 mars 2022 au 13 mai 2022.<br> 
+              </h4>
+              <div> 
+                <img src="graph_luna_baisse.PNG"
+                style="max-width:650px">
+              </div> 
+              <br>
+              <!--insertion analyse graphique (g.b2)-->
+              <h4>
+                Bot Mak2 vs Holding.
+              </h4>
+              <h3 style="margin-bottom:-20px">
+                (à la baisse)
+              </h3>
+              <br>
+              <div class="graph">
+                <canvas id="myChart_b2"></canvas>
+              </div>
+              <h3>
+              <b>Holding de 1000$ à 617$.</b><br>
+              <b>Bot Mak2 de 1000$ à 0.0004$.</b>
+              </h3>
+              <br>
+            </div>
+            <!--analyse a la baisse-->
+            <div id="graphes_baisses" style="background-color: rgb(255, 221, 221);">
+              <h4 style="margin-top:15px">
+                Graphique.<br> 
+                ADA Du 3 septembre 2021 au 13 mai 2022.<br> 
+              </h4>
+              <div> 
+                <img src="graph_ada_baisse_1ans.PNG"
+                style="max-width:650px">
+              </div> 
+              <br>
+              <!--insertion analyse graphique (g.b3)-->
+              <h4>
+                Bot Mak2 vs Holding.
+              </h4>
+              <h3 style="margin-bottom:-20px">
+                (à la baisse)
+              </h3>
+              <br>
+              <div class="graph">
+                <canvas id="myChart_b3"></canvas>
+              </div>
+              <h3>
+              <b>Holding de 1000$ à 705$.</b><br>
+              <b>Bot Mak2 de 1000$ à 178$.</b>
+              </h3>
+              <br>
+            </div>
+            <!--analyse a la baisse-->
+            <div id="graphes_baisses" style="background-color: rgb(255, 221, 221);">
+            <h4 style="margin-top:15px">
+              Graphique.<br> 
+              Ethereum Du 8 janvier 2018 au 7 décembre 2018.<br> 
+            </h4>
+            <div> 
+              <img src="graph_eth_baisse_1ans.png"
+              style="max-width:650px">
+            </div> 
+            <br>
+            <!--insertion analyse graphique (g.1)-->
+            <h4>
+              Bot Mak2 vs Holding.
+            </h4>
+            <h3 style="margin-bottom:-20px">
+              (à la baisse)
+            </h3>
+            <br>
+            <div class="graph">
+              <canvas id="myChart"></canvas>
+            </div>
+            <h3>
+            <b>Holding de 1000$ à 82$.</b><br>
+            <b>Bot Mak2 de 1000$ à 1189$.</b>
+            </h3>
+            <br>
+          </div>
+          </div>
+        </div>
+      </section>
+    </div>
+      <footer>
+        <div class="container">
+          <a href="#">
+            <img src="logo.png" alt="">
+          </a>
+        </div>
+      </footer>
+    
+    
+        <!--animation des images-->
+          <script>
+            const translateX = document.querySelectorAll(".translateX");
+        const translateY = document.querySelectorAll(".translateY");
+        window.addEventListener("scroll" ,() => {
+          let scroll = window.pageYOffset;
+          translateX.forEach(element => {
+            let speed = element.dataset.speed;
+            element.style.transform = `translateX(${scroll * speed}px)`;
+          })
+          translateY.forEach(element => {
+            let speed = element.dataset.speed;
+            element.style.transform = `translateY(${scroll * speed}px)`;
+          })
+        })
+          </script>
+          <!--ici bas permet d'afficher le graphique à la baisse-->
+          <script>
+            const myChart = new Chart(
+              document.getElementById('myChart'),
+              config
+            );
+          </script>
+          <!--graph en range-->
+          <script>
+            const myChart_r = new Chart(
+              document.getElementById('myChart_r'),
+              config_r
+            );
+          </script>
+          <!--graph à la hausse-->
+          <script>
+            const myChart_h = new Chart(
+              document.getElementById('myChart_h'),
+              config_h
+            );
+          </script>
+
+          <!--graph à la hausse-->
+          <script>
+            const myChart_h2 = new Chart(
+              document.getElementById('myChart_h2'),
+              config_h2
+            );
+          </script>
+
+          <!--graph à la hausse-->
+          <script>
+            const myChart_h3 = new Chart(
+              document.getElementById('myChart_h3'),
+              config_h3
+            );
+          </script>
+          
+          
+          <!--graph à la hausse-->
+          <script>
+            const myChart_h4 = new Chart(
+              document.getElementById('myChart_h4'),
+              config_h4
+            );
+          </script>
+
+          <!--graph à la baisse-->
+          <script>
+            const myChart_b2 = new Chart(
+              document.getElementById('myChart_b2'),
+              config_b2
+            );
+          </script>
+
+          <!--graph à la baisse-->
+          <script>
+            const myChart_b3 = new Chart(
+              document.getElementById('myChart_b3'),
+              config_b3
+            );
+          </script>
+
+          <!--graph en range-->
+          <script>
+            const myChart_r2 = new Chart(
+              document.getElementById('myChart_r2'),
+              config_r2
+            );
+          </script>
+          
+          <!--graph en range-->
+          <script>
+            const myChart_r3 = new Chart(
+              document.getElementById('myChart_r3'),
+              config_r3
+            );
+          </script>
+
+
+          <!--button affichage-->
+          <script>
+            let btn_styler = document.getElementById("btn_styler");
+            let section1= document.getElementById("section1");
+            let btn_styler2 = document.getElementById("btn_styler2");
+            let section2= document.getElementById("section2");
+            let btn_styler3 = document.getElementById("btn_styler3");
+            let section3= document.getElementById("section3");
+            
+            function btn1(){
+            if(getComputedStyle(section1).display != "none"){
+              section1.style.display = "none";
+            } else {
+              section1.style.display = "block";
+            }
+            };
+            btn_styler.onclick = btn1;
+
+            function btn2(){
+            if(getComputedStyle(section2).display != "none"){
+              section2.style.display = "none";
+            } else {
+              section2.style.display = "block";
+            }
+            };
+            btn_styler2.onclick = btn2;
+
+            function btn3(){
+            if(getComputedStyle(section3).display != "none"){
+              section3.style.display = "none";
+            } else {
+              section3.style.display = "block";
+            }
+            };
+            btn_styler3.onclick = btn3;
+
+        </script>
+
+      <script>
+        AOS.init();
+      </script>
+      </body>
+</html>
