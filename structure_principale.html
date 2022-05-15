@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="menu.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="stylesheet" type="text/css" href="menu.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      </head>
+<body>
+    <!-- debut barre + animation -->
+    <nav class="navbar mode" role="navigation">
+        <div class="navbar__logo"></div> 
+        <div class = "linkss">   
+        <ul class="navbar__links">
+          <li class="navbar__link first"><a href="menu.html">ACCEUIL</a></li>
+          <li class="navbar__link second"><a href="#">CONTACT</a></li>
+          <li class="navbar__link third"><a href="Backtests.html">Backtests</a></li>
+          <li class="navbar__link four"><a href="faq.html">F&Q</a></li>
+        </ul>
+        </div>   
+        <button class="burger">
+          <span class="bar"></span>  
+        </button>   
+      </nav>
+      <main class="main-content" role="main">
+      </main>
+      <script>
+      function toggleMenu () {  
+        const navbar = document.querySelector('.navbar');
+        const burger = document.querySelector('.burger');
+        burger.addEventListener('click', (e) => {    
+          navbar.classList.toggle('show-nav');
+        });    
+      }
+      toggleMenu();
+    </script>
+    <!-- fin barre + animation -->
+      <section class="hero">
+        <img src="1.png" class="translateX" data-speed="0.25" id="moon" alt="">
+        <img src="2.png" class="translateY" data-speed="0.25" id="clouds" alt="">
+        <img src="3.png" class="translateY" data-speed="0.9" id="mount" alt="">
+        <h1 id="text" class="translateX" data-speed="-4.0">BOT MAK2</h1>
+        <a href="#" id="btn">F&Q</a>
+        <img src="4.png" class="translateY" data-speed="0" id="base" alt="">
+      </section>
+
+      <section id="about" class="section-padding">   
+        <div class="container grid">
+            <div class="dems" style ="margin-top:30px">
+                <div class="right-content" style ="margin-top:30px">
+                    
+                </div>
+            </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+          <a href="#">
+            <img src="logo.png" alt="">
+          </a>
+        </div>
+      </footer>
+    
+    
+        <!--animation des images-->
+          <script>
+            const translateX = document.querySelectorAll(".translateX");
+        const translateY = document.querySelectorAll(".translateY");
+        window.addEventListener("scroll" ,() => {
+          let scroll = window.pageYOffset;
+          translateX.forEach(element => {
+            let speed = element.dataset.speed;
+            element.style.transform = `translateX(${scroll * speed}px)`;
+          })
+          translateY.forEach(element => {
+            let speed = element.dataset.speed;
+            element.style.transform = `translateY(${scroll * speed}px)`;
+          })
+        })
+          </script>
+          <!--ici bas permet d'afficher le graphique à la baisse-->
+          <script>
+            const myChart = new Chart(
+              document.getElementById('myChart'),
+              config
+            );
+          </script>
+          <!--graph en range-->
+          <script>
+            const myChart_r = new Chart(
+              document.getElementById('myChart_r'),
+              config_r
+            );
+          </script>
+          <!--graph à la hausse-->
+          <script>
+            const myChart_h = new Chart(
+              document.getElementById('myChart_h'),
+              config_h
+            );
+          </script>
+
+          <!--graph à la hausse-->
+          <script>
+            const myChart_h2 = new Chart(
+              document.getElementById('myChart_h2'),
+              config_h2
+            );
+          </script>
+
+          <!--graph à la hausse-->
+          <script>
+            const myChart_h3 = new Chart(
+              document.getElementById('myChart_h3'),
+              config_h3
+            );
+          </script>
+          
+          
+          <!--graph à la hausse-->
+          <script>
+            const myChart_h4 = new Chart(
+              document.getElementById('myChart_h4'),
+              config_h4
+            );
+          </script>
+
+          <!--graph à la baisse-->
+          <script>
+            const myChart_b2 = new Chart(
+              document.getElementById('myChart_b2'),
+              config_b2
+            );
+          </script>
+
+          <!--graph à la baisse-->
+          <script>
+            const myChart_b3 = new Chart(
+              document.getElementById('myChart_b3'),
+              config_b3
+            );
+          </script>
+
+          <!--graph en range-->
+          <script>
+            const myChart_r2 = new Chart(
+              document.getElementById('myChart_r2'),
+              config_r2
+            );
+          </script>
+          
+          <!--graph en range-->
+          <script>
+            const myChart_r3 = new Chart(
+              document.getElementById('myChart_r3'),
+              config_r3
+            );
+          </script>
+
+
+          <!--button affichage-->
+          <script>
+            let btn_styler = document.getElementById("btn_styler");
+            let section1= document.getElementById("section1");
+            let btn_styler2 = document.getElementById("btn_styler2");
+            let section2= document.getElementById("section2");
+            let btn_styler3 = document.getElementById("btn_styler3");
+            let section3= document.getElementById("section3");
+            
+            function btn1(){
+            if(getComputedStyle(section1).display != "none"){
+              section1.style.display = "none";
+            } else {
+              section1.style.display = "block";
+            }
+            };
+            btn_styler.onclick = btn1;
+
+            function btn2(){
+            if(getComputedStyle(section2).display != "none"){
+              section2.style.display = "none";
+            } else {
+              section2.style.display = "block";
+            }
+            };
+            btn_styler2.onclick = btn2;
+
+            function btn3(){
+            if(getComputedStyle(section3).display != "none"){
+              section3.style.display = "none";
+            } else {
+              section3.style.display = "block";
+            }
+            };
+            btn_styler3.onclick = btn3;
+
+        </script>
+
+      <script>
+        AOS.init();
+      </script>
+      </body>
+</html>
