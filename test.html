@@ -9,68 +9,27 @@
 
 </head>
 <body>
-    <h1>Comment afficher ou masquer un élément HTML</h1>
-    <button id="togg1" style="width:500px">Cliquez-moi !</button>
-    <button id="togg2">Cliquez-moi !</button>
-    <div id="d1">
-        <p>Ce texte appartient au premier div de ma page</p>
-        <p>Ce deuxième paragraphe également</p>
+    <div class="night">
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
     </div>
-    <div id="d2">
-        <p>Il existe deux façons de cacher un élément <span>comme un div</span> en CSS :</p>
-        <ul>
-            <li>Utiliser visibility: hidden</li>
-            <li>Utiliser display: none</li>
-        </ul>
-    </div>
-    <div id="button_1"class="container_styler">
-    <button class="btn_styler" href="#">
-    hover me
-    </button>
-    </div>
-    <div id="graph_baissier">
-        <h1>
-            testons
-        </h1>
-    </div>
-
-
-
-    <script>
-        let togg1 = document.getElementById("togg1");
-        let togg2 = document.getElementById("togg2");
-        let d1 = document.getElementById("d1");
-        let d2 = document.getElementById("d2");
-        let button_1 = document.getElementById("button_1");
-        let graph_baissier= document.getElementById("graph_baissier");
-        
-        function togg_1(){
-        if(getComputedStyle(d1).display != "none"){
-            d1.style.display = "none";
-        } else {
-            d1.style.display = "block";
-        }
-        };
-        togg1.onclick = togg_1;
-
-
-        function togg_2(){
-        if(getComputedStyle(d2).display != "none"){
-            d2.style.display = "none";
-        } else {
-            d2.style.display = "block";
-        }
-        };
-        togg2.onclick = togg_2;
-
-        function grb(){
-        if(getComputedStyle(graph_baissier).display != "none"){
-            graph_baissier.style.display = "none";
-        } else {
-            graph_baissier.style.display = "block";
-        }
-        };
-        button_1.onclick = grb;
-    </script>
 </body>
 </html>

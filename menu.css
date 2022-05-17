@@ -641,3 +641,39 @@ background-color: #181889;
   padding: 0 20px;
   background-color: #000000;
   }
+
+.telegram{
+    margin-top:40px;
+      max-width: 100px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+}
+
+.test23{
+  display: inline-block;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 12px;
+  height: 30px;
+  color: rgb(255, 255, 255);
+  padding: 0 23px;
+  background-color: #ff0b0b;
+  }
+
+  .test24{
+    display: inline-block;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 8px;
+    font-size: 12px;
+    height: 30px;
+    color: white;
+    padding: 0 17px;
+    background-color: #000000;
+    }

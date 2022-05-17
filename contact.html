@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,26 +49,26 @@
         <img src="4.png" class="translateY" data-speed="0" id="base" alt="">
       </section>
 
-      <section id="about" class="section-padding" style ="padding-top:0px">   
-        <div class="container grid">
+      <section id="about" class="section-padding" style ="padding-top:0px; padding-bottom:0px">   
+        <div class="container grid" style="background-color: #ffffff;">
             <div class="dems" style ="margin-top:0px;">
                 <div class="right-content" style ="margin-top:30px;">
-                   <h4 class="space">
+                   <h4 class="space" style="text-align: center;">
                        Comment obtenir le robot MAK2?:
                    </h4>
                    <br>
-                   <h3>
+                   <h3  style="text-align: center;">
                        -(1) Avoir un compte ftx ou binance.<br><br>
+                       La clé api privé et publique + le nom dédié à cette clé vous sera demandé.<br>
                    </h3>
-                   <div style="text-align: left;">
+                   <div style="text-align: center;">
                    <button id="btnftx" class="test21">Pour les utilisateurs ftx<br>
                     (cliquez ici)
                    </button>
                    <br>
                    <br>
                   </div>
-
-                   <div id="etapesftx" style="display:none"> 
+                   <div id="etapesftx" style="display:none;"> 
                     
                     <h3 style="text-align: center;">
                         1.
@@ -81,41 +81,42 @@
                     <img src="etape2ftx.png"
                     style="max-width:650px">
                     <h3 style="text-align: center;">
-                        3.cree un sous-compte dedier au robot MAK2
+                        3.Créé un sous-compte dédier au robot MAK2.
                     </h3>
                     <img src="etape3ftx.png"
                     style="max-width:650px">
                     <h3 style="text-align: center;">
-                        4. Gardez le nom du sous-compte quelque part , il vous sera demandé lors de la configuration du robot.
+                        4. Gardez le nom du sous-compte quelque part , 
+                        il vous sera demandé lors de la configuration du robot.
                     </h3>
                     <img src="etape4ftx.png"
                     style="max-width:650px">
                     <h3 style="text-align: center;">
-                        5.Au moment de la creation de la clé publique et privé
-                        il faut que vous soyez sur votre sous-compte dédié au robotMAK2
+                        5.Au moment de la création de la clé publique et privé il faut 
+                        que vous soyez sur votre sous-compte dédié au robot MAK2.
                     </h3>
                     <img src="etape5ftx.png"
                     style="max-width:650px">
                     <h3 style="text-align: center;">
                         6.Gardez quelque part la clé publique et privé , elles vous seront demandé
-                        lors de la configuration du robot MAK2
+                        lors de la configuration du robot MAK2.
                     </h3>
                     <img src="etape6ftx.png"
                     style="max-width:650px">
                     <h3 style="text-align: center;">
-                        7.Verifiez que l'opiton trading soit activé pour le sous-compte dedié au robot MAK2
+                        7.Vérifiez que l'option trading soit activé pour le sous-compte dédié au robot MAK2.
                     </h3>
                     <img src="etape7ftx.png"
                     style="max-width:650px">
                     <h3 style="text-align: center;">
-                        8.cette étape concerne que si l'option trading n'est pas activé commme vu à l'étape 7, apuuyez sur modifier (forme de stylo)
-                        et configurez comme ceci, cela permet d'activer <b>seulement</b> le trading.
+                        8.Cette étape concerne que si l'option trading n'est pas activé comme vu à l'étape 7, 
+                        appuyez sur modifier (forme de stylo) et configurez comme ceci, cela permet d'activer  <b>seulement</b> le trading.
                     </h3>
                     <img src="etape8ftx.png"
                     style="max-width:650px">
                 
                   </div> 
-                  <div style="text-align: left;">
+                  <div style="text-align: center;">
                     <button id="btnbinance" class="test22">Pour les utilisateurs Binance<br>
                      (cliquez ici)
                     </button>
@@ -129,7 +130,7 @@
                     <img src="etape1binance.png"
                     style="max-width:650px">
                     <h3 style="text-align: center;">
-                      2.cree un sous compte dédié au bot Mak2
+                      2.Créé un sous-compte dédié au robot Mak2.
                     </h3>
                     <img src="etape2binance.png"
                     style="max-width:650px">                    <h3 style="text-align: center;">
@@ -137,35 +138,44 @@
                     </h3>
                     <img src="etape3binance.png"
                     style="max-width:650px">                    <h3 style="text-align: center;">
-                      4.Configurez les parametres de la clé
+                      4.Configurez les paramètres de la clé.
                     </h3>
                     <img src="etape4binance.png"
                     style="max-width:650px">                    <h3 style="text-align: center;">
-                      5.Cochez la case pour autroiser seulemnt le trading, et n'oubliez pas de sauvgarder
+                      5.Cochez la case pour autoriser <b>seulement</b> le trading, et n'oubliez pas de sauvegarder.
                     </h3>
                     <img src="etape5binance.png"
                     style="max-width:650px">
                    </div>
                     <!--creer button et div pour tuto clé privé et publique-->
-                    <h3>
-                    -(2) Choisir les crypto qui seront trader par le robot Mak2
-                    et verifier qu'il existe une paire avec l'usdt, exemple:<br>
-                    vous shouaitez utiliser le robot sur l'XRP et vous etes sur binance,
-                    il faut qu'il existe une paire XRPUSDT sur binance<br><br>
-                    -(3) Choisir votre tarif
+                    <h3 style="text-align: center;">
+                      -(2) Choisir les crypto qui seront trader par le robot Mak2 et vérifier qu'il existe une paire avec l'USDT, exemple :<br>
+                      Vous souhaitez utiliser le robot sur l'XRP et vous êtes sur binance, il faut qu'il existe une paire XRPUSDT sur binance<br><br>
+                    -(3) Vous aurez le choix entre ces tarifs:
                     </h3>
+                    <img src="prix.png"
+                    style="max-width:450px">
                     <br>
-                    <h4>
-                        Une fois que vous avez toutes ses informations
+                    <h4 style="text-align: center;">
+                        Une fois que vous avez toutes ses informations,
                         il ne vous reste qu'à nous les communiquer sur telegram et on 
                         se chargera de la configuration avec vous.
                     </h4>
-                    
-                    
-                   
+
+                    <div>
+                      
+                      <a href="#" class="fa fa-telegram">
+                        <img class="telegram" src="telegram_logopng.png" >
+                      </a>
+
+                    </div>
+
                 </div>
+                
             </div>
+            
         </div>
+        
       </section>
       <footer>
         <div class="container">
